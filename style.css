@@ -1,0 +1,94 @@
+.container{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+.child{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(77, 77, 255);
+    color: white;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.child:hover{
+    background-color: rgb(0, 255, 166);
+    cursor: pointer;
+}
+.loader{
+    animation: spin 3s linear infinite;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.loader1{
+    animation: spin 2s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.btnStop{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(245, 115, 115);
+    color: white;
+    border-radius: 5px;
+}
+.btnStop:hover{
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+/* style container grid */
+.container-grid {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+        "satu dua"
+        "tiga empat";
+    gap: 10px;
+    justify-items: center;
+}
+.grid-item {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(77, 77, 255);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.items0 {
+    grid-area: satu;
+}
+.items1{
+    grid-area: dua;
+}
+.items2
+{
+    grid-area: tiga;
+}
+.items3{
+    grid-area: empat;
+}
