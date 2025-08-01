@@ -82,13 +82,90 @@
 .items0 {
     grid-area: satu;
 }
+.items0:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
 .items1{
     grid-area: dua;
 }
-.items2
-{
+.items1:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+.items2{
     grid-area: tiga;
+}
+.items2:hover{
+    background-color: aqua;
+    cursor: pointer;
 }
 .items3{
     grid-area: empat;
+}
+.items3:hover{
+    background-color: aqua;
+    cursor: pointer;
+}
+.itemHide{
+    display: none;
+}
+#btnHide{
+    display: block;
+    margin: 10px auto;
+    padding: 20px;
+    border: none;
+    background-color: rgb(249, 108, 108);
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* styling form validasi */
+.container-form{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: orangered;
+    padding: 20px;
+    border-radius: 10px;
+}
+.container-form input{
+    display: block;
+    max-width: 90%;
+    margin: 10px auto;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.container-form label{
+    margin: 5px auto;
+    font-weight: bold;
+}
+.container-form input:focus{
+    outline: none;
+    border-color: rgb(0, 255, 166);
+}
+.btnForm{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(118, 118, 243);
+    color: white;
+    border-radius: 5px;
+}
+.namaError{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: blue;
+}
+.kelasError{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    background-color: blue;
 }
