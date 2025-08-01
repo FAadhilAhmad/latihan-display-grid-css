@@ -19,11 +19,31 @@
 
     <!-- display grid -->
      <div class="container-grid">
-        <div class="grid-item items0">ONE</div>
+        <div  id="items0" class="items0 grid-item">ONE</div>
         <div class="grid-item items1">TWO</div>
         <div class="grid-item items2">THREE</div>
         <div class="grid-item items3">FOUR</div>
      </div>
+     <button id="btnHide">HIde</button>
+     <!-- display grid end -->
+
+     <!-- from validasi -->
+      <section class="from">
+        <form id="formLatihan" class="container-form" action="#" method="dialog">
+
+            <label for="name">Nama</label>
+            <input type="text" id="nama" placeholder="Masukan nama......">
+            <div id="namaError" class="namaError"></div>
+
+            <label for="kelas">Kelas</label>
+            <input type="text" id="kelas" placeholder="Masukan kelas......">
+              <div id="kelasError" class="kelasError"></div>
+
+            <button id="btnForm" class="btnForm" type="submit">UPLOAD</button>
+        </form>
+
+      </section>
+
     <script src="main.js"></script>
 </body>
 </html>
